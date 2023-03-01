@@ -1,0 +1,25 @@
+{
+  "name": "Rejoyce class fashion",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.17.1",
+    "connect-flash": "^0.1.1",
+    "ejs": "^2.5.6",
+    "express": "^4.15.2",
+    "express-handlebars": "^3.1.0",
+    "faker": "^4.1.0",
+    "mongoose": "^4.11.12",
+    "msnodesqlv8": "^3.0.1",
+    "mssql": "^9.0.1",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0"
+  }
+}

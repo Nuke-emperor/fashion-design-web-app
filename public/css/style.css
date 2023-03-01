@@ -1,0 +1,35 @@
+
+#hero{
+    background-image: url('images/hero.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+#location_ico{
+    font-size: 30px;
+    color: rgb(225, 69, 69);
+}
+#phone_ico {
+    font-size: 30px;
+    color: rgb(225, 69, 69);
+}
+#msg_ico {
+    font-size: 30px;
+    color: rgb(225, 69, 69);
+}
+#call-div{
+  border: none;
+}
+
+
+
+#call-info{
+    border: none;
+}
+
+.lead{
+    font-size: 200px;
+}
