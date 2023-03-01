@@ -32,11 +32,7 @@ app.use(express.static(path.join(__dirname, 'public')))
 
 
 app.get('/', function (req, res) {
-    const imagelist = []
-    imagelist.push({ src: 'images/people_together.jpg' })
-    imagelist.push({src:'images/jenkins.jpg'})
-
-    res.render('index', { imagelist:imagelist})
+    res.render('index')
 })
 
 app.post('/login', (req, res) => {
