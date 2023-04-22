@@ -1,6 +1,6 @@
 
 #hero{
-    background-image: url('images/hero.jpg');
+    background-image: url('/public/images/fashion-store.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

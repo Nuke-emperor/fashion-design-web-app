@@ -1,6 +1,6 @@
 
 const express = require('express')
-const exphbs = require('express-handlebars')
+// const exphbs = require('express-handlebars')
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose') 
 const path = require('path')
@@ -21,18 +21,18 @@ mongoose.connect('mongodb://localhost/users', {
 
 //Middleware
 //BODYPARSER MIDDLEWARE
-app.use(bodyParser.urlencoded({ extended: true }))// parse application/json
+// app.use(bodyParser.urlencoded({ extended: true }))// parse application/json
 // app.use(bodyParser.json())
 //handlebars MIDDLEWARE
-app.engine('handlebars', exphbs({
-    defaultLayout: 'main'
-}));
-app.set('view engine', 'handlebars');
+// app.engine('ejs',ejs({
+//     defaultLayout: 'main'
+// }));
+app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, 'public')))
 
 
 app.get('/', function (req, res) {
-    res.render('index')
+    res.render('home')
 })
 
 app.post('/login', (req, res) => {
