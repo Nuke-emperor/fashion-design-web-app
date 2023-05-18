@@ -1,35 +1,46 @@
 
 #hero{
-    background-image: url('/public/images/fashion-store.jpg');
+    background-image:  url('/images/fashion_background.jpg');
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 100vh;
+    height: 60vh;
+}
+@media only screen and (max-width: 767px) {
+    #about-text{
+        font-size: 16px;
+        padding-right: 10px;
+        font-family: Verdana;
+    }   
 }
 
-#location_ico{
-    font-size: 30px;
-    color: rgb(225, 69, 69);
-}
-#phone_ico {
-    font-size: 30px;
-    color: rgb(225, 69, 69);
-}
-#msg_ico {
-    font-size: 30px;
-    color: rgb(225, 69, 69);
-}
-#call-div{
-  border: none;
-}
+ #about-text {
+     font-size: 20px;
+     padding-right: 10px;
+     
+ }
 
+ #about-tit {
+    color: rgb(239, 40, 170);
+ }
 
-
-#call-info{
+ .card{
     border: none;
-}
 
-.lead{
-    font-size: 200px;
+ }
+
+ #service-title{
+        color: rgb(239, 40, 170);
+        border: 5px solid purple bottom;
+ }
+
+
+
+#about_us{
+    height: 500px;
+    margin-top: 100px;
+    background-image: url('/images/hero.png');
+    background-position: center;
+    background-size: cover;
+    
 }
