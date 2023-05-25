@@ -1,46 +1,80 @@
+#hero {
+  background-image: url("/images/fashion_background.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 60vh; }
 
-#hero{
-    background-image:  url('/images/fashion_background.jpg');
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    height: 60vh;
+/* #about-text {
+  font-size: 24px;
+  padding-right: 20px;
+ } */
+
+#about-tit {
+  color: #fc0679; 
+  margin-top: 7rem;
+  margin-bottom: 3rem;
 }
-@media only screen and (max-width: 767px) {
-    #about-text{
-        font-size: 16px;
-        padding-right: 10px;
-        font-family: Verdana;
-    }   
+
+
+
+.card {
+  border: none;
+ }
+
+#service-title {
+  color: #fc0679;
+  margin-top: 10rem;
+  margin-bottom: 5rem; }
+
+#malin-img {
+  width: 100px; }
+
+#call-ico {
+  font-size: 30px;
+  color: #fc0679; }
+
+.hero-text {
+  display: inline-block;
+  color: #f4f0f0;
+  padding: 10px 40px;
+  font-size: 30px;
+  font-family: 'Lucida Sans';
+  padding: 14px 20px;
+  background-color: rgba(0, 0, 0, 0.781);
+  text-transform: uppercase; 
+
 }
 
- #about-text {
-     font-size: 20px;
-     padding-right: 10px;
-     
- }
+/* #about_us {
+  height: 500px;
+  margin-top: 100px;
+  background-image: linear-gradient(#010126,#fc0679); } */
 
- #about-tit {
-    color: rgb(239, 40, 170);
- }
+#contact-text {
+  color: #fc0679;
+  margin-bottom: 70px;
+  margin-top: 40px; }
 
- .card{
-    border: none;
+.nav-link {
+  color: white; }
 
- }
-
- #service-title{
-        color: rgb(239, 40, 170);
-        border: 5px solid purple bottom;
- }
+#nav-user {
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.878); 
+}
 
 
 
-#about_us{
-    height: 500px;
-    margin-top: 100px;
-    background-image: url('/images/hero.png');
-    background-position: center;
-    background-size: cover;
-    
+#italic{
+  margin-bottom: 2rem;
+}
+
+#ab-row{
+  margin-top: 8rem;
+}
+
+#Contact-us-sect{
+  background-position: center;
+  background-size: cover;
 }

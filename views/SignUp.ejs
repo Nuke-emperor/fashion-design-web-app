@@ -1,7 +1,5 @@
 <div class="container">
-    {{#each erros}}
-    <div class="alert alert-danger">{{text}}</div>
-    {{/each}}
+
     <div class="card card-body col-md-10 col-lg-7 mx-auto  ">
         <form action="/login" method="post">
         
@@ -9,10 +7,10 @@
             <div class="align-center">
                 <i class="fa fas-pencil"></i>
             </div>
-            <input ype="text" class="form-group form-control mb-3" placeholder="Name" name="name" value="{{name}}" required>
-            <input type="text" class="form-group form-control mb-3" placeholder="Email" name="email" value="{{email}}" required>
-            <input type="password" class="form-group form-control mb-3" placeholder="password" name="password1" value="{{pass1}}" required>
-            <input type="password" class="form-group form-control mb-3" placeholder="confirm password" name="password2" value="{{pass2}}" required>
+            <input ype="text" class="form-group form-control mb-3" placeholder="Name"  required>
+            <input type="text" class="form-group form-control mb-3" placeholder="Email"  required>
+            <input type="password" class="form-group form-control mb-3" placeholder="password"  required>
+            <input type="password" class="form-group form-control mb-3" placeholder="confirm password"   required>
             <button type="submit" class="btn btn-block btn-outline-danger mb-4">Sign up</button>
             
 
