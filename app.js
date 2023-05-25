@@ -1,6 +1,5 @@
 
 const express = require('express')
-// const exphbs = require('express-handlebars')
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose') 
 const path = require('path')
@@ -15,9 +14,6 @@ mongoose.connect('mongodb://localhost/users', {
 })
     .then(() => console.log('mongose connected...'))
 .catch(err => console.log(err))
-
-
-
 
 //Middleware
 //BODYPARSER MIDDLEWARE
@@ -53,8 +49,6 @@ app.post('/register', (req, res) => {
 app.get('/you', (req, res)=> {
     res.render('you')
 })
-
-
 
 const port = 5000
 app.listen( port, function() {
