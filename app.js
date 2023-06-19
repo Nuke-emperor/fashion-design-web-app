@@ -2,7 +2,10 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose') 
+const bcrypt = require('bcryptjs')
+passport = require('passport')
 const path = require('path')
+
 
 const app = express()
 
@@ -38,11 +41,17 @@ app.post('/register', (req, res) => {
         Password: req.body.password
     }
 
-    new User(new_user)
-        .save()
-        .then(() => {
-            res.redirect('/')
+    bcrypt.genSalt(10, (err, salt) => {
+        bcrypt.hash(new_user.Password, salt, (err, hash ) => {
+            if (err) throw err
+            new_user.Password = hash
+            new User(new_user)
+                .save()
+                .then(() => {
+                    res.redirect('/')
+                })
         })
+    })
 
 })
 
