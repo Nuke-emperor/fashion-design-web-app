@@ -5,6 +5,7 @@ const mongoose = require('mongoose')
 const bcrypt = require('bcryptjs')
 passport = require('passport')
 const path = require('path')
+const passport = require('passport')
 
 
 const app = express()
@@ -55,8 +56,11 @@ app.post('/register', (req, res) => {
 
 })
 
-app.get('/you', (req, res)=> {
-    res.render('you')
+app.post('/login', (req, res, next) => {
+    passport.authenticate('local', {
+        successRedirect: '/',
+        failureRedirect:'/login'
+    })(req,res, next)
 })
 
 const port = 5000
